@@ -115,7 +115,7 @@ a {
 
 .page-header{
     background-color: var(--white-color);
-    border: 1px solid transparent
+    border: 1px solid var(--background-primary-color);
 }
 
 .menu {
@@ -178,27 +178,28 @@ a {
     letter-spacing: 0.02em;
     /* outline: 2px solid tomato; */
     color: var(--title-text-color);
-    
+
 }
 
 .auth-link:hover,
 .auth-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .auth-nav .item+.item {
     margin-left: 50px;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.auth-nav-icon{
+    margin: 0 10px 0 0;
 }
 
-.item:hover {
-    fill: var(--accent-color);
+.auth-nav-icon {
+    display: inline-block;
 }
+
+
 
 
 /* main */
@@ -211,10 +212,16 @@ a {
 .hero {
     background-color: var(--background-hero-footer-color);
     /* outline: 2px solid tomato; */
-    background-image: url(../img/hero-title.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(196, 196, 196, 0.2),
+        rgba(196, 196, 196, 0.2)
+    ),
+    url(../img/hero-title.jpg);
+
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .container-hero {
@@ -231,7 +238,7 @@ a {
     flex-direction: column;
     height: 600px;
     
-    background-color: var(--background-hero) ;
+    
 }
 
 .hero-title {
@@ -421,6 +428,11 @@ a {
 .client-text {
     margin: 0 0 50px;
     text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 
 }
 
@@ -624,7 +636,7 @@ a {
 
 /* icon */
 .feature {    
-    margin: 12px 0 100px 70px;
+    margin: 12px 0 0 70px;
     /* outline: 2px solid tomato;    */
 }
 
@@ -660,7 +672,8 @@ a {
 }
 
 
-.feature-link:hover {
+.feature-link :hover,
+.feature-link :focus {
     background-color: var(--accent-color) ;
     border-radius: 50%;
 }
@@ -690,8 +703,6 @@ a {
 }
 
 .social-icons {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -701,7 +712,8 @@ a {
     background-color: var(--white-color);
 }
 
-.social-link :hover{
+.social-link :hover,
+.social-link :focus {
     fill: var(--white-color);
     background-color: var(--accent-color);
     border-radius: 50%;

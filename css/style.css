@@ -219,9 +219,9 @@ a {
     ),
     url(../img/hero-title.jpg);
 
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;  
 }
 
 .container-hero {

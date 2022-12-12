@@ -75,7 +75,7 @@
     --background-icon-footer: rgba(255, 255, 255, 0.1);
     --border-client: #AFB1B8;
     --fill-client: #AFB1B8;
-    --background-hero: rgba(196 ,196 ,196 , 0.2);
+    --background-hero: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -214,14 +214,15 @@ a {
     /* outline: 2px solid tomato; */
     background-image: linear-gradient(
         to right,
-        rgba(196, 196, 196, 0.2),
-        rgba(196, 196, 196, 0.2)
+        var(--background-hero),
+        var(--background-hero)
     ),
     url(../img/hero-title.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
+    min-width: 1600px;  
 }
 
 .container-hero {
@@ -697,7 +698,7 @@ a {
     justify-content: center;
     gap: 10px;
 
-    margin:0 0 30px ;
+    margin: 16px 0 0 0 ;
 }
 
 .social-icons {
